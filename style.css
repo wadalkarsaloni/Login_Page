@@ -1,0 +1,148 @@
+:root {
+    --section-overlay: rgba(0, 0, 0, 0.7);
+    --background-overlay: rgba(0, 0, 0, 0.2)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main_div{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/Assests/Images/photo-1497864149936-d3163f0c0f4b.avif');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+
+.login{
+  height: 100vh;
+  width: 50vw;
+  border-radius: 7px;
+   background-color: white;
+  /* position: relative; */
+  float: right;
+  text-align: center;
+}
+
+.head1{
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+.google-button{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: white;
+  height: 49px;
+  width: 64%;
+}
+
+.or-divider{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "futura-pt";
+  font-size: 2em;
+  margin: 0 7em;
+}
+
+.or-divider::before{
+  content: '';
+  height: .125em;
+  background: grey;
+  flex: 1;
+  margin: 0 .25em 0 0;
+}
+.or-divider::after{
+  content: '';
+  height: .125em;
+  background: grey;
+  flex: 1;
+  margin: 0 0 0 .25em;
+}
+
+.input{
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: white;
+  height: 49px;
+  width: 64%;
+}
+
+.control{
+  height: 49px;
+  width: 64%;
+  align-items: center;
+  background-color: orangered;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.password-container{
+  width: 435px;
+  position: relative;
+  left: 18%;
+}
+.password-container input[type="password"],
+.password-container input[type="text"]{
+  width: 100%;
+  padding: 12px 36px 12px 12px;
+  box-sizing: border-box;
+}
+.fa-eye{
+  position: absolute;
+  top: 28%;
+  right: 5%;
+  cursor: pointer;
+  color: lightgray;
+}
+
+@media (max-width: 600px) {
+  .main_div,
+  .login,
+  .icon ,.password-container,.google-button, .input,.main_div,.or-divider,.or-divider::after,.or-divider::before {
+    width: 70%;
+  }
+}
+/* @media (width >= 800px) {
+  .main_div,
+  .login,
+  .icon {
+    width: 50;
+    height: 760px;
+  }
+}
+
+@media (width >= 450px) {
+  .main_div,
+  .login,
+  .icon {
+    width: 380px;
+  }
+} */
